@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Health Companion - Your Personal Health Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="page-auth">
+    <h1>❤️ Health Companion</h1>
+    <p style="color: #666; margin-bottom: 30px;">Your personal health and wellness assistant</p>
+    <div>
+      <button id="btn-signup">Sign Up</button>
+      <button id="btn-login">Login</button>
+    </div>
+
+    <div id="signup-form" style="display:none;">
+      <h3>Create Account</h3>
+      <input id="signup-name" placeholder="Full Name" />
+      <input id="signup-phone" placeholder="Phone Number" />
+      <input id="signup-password" placeholder="Password" type="password" />
+      <button id="signup-submit">Agree & Sign Up</button>
+    </div>
+
+    <div id="login-form" style="display:none;">
+      <h3>Welcome Back</h3>
+      <input id="login-phone" placeholder="Phone Number" />
+      <input id="login-password" placeholder="Password" type="password" />
+      <button id="login-submit">Login</button>
+      <p style="text-align: center; margin-top: 15px;">
+        <a href="#" id="forgot-password-link" style="color: #3498db; text-decoration: none;">Forgot Password?</a>
+      </p>
+    </div>
+
+    <div id="forgot-password-form" style="display:none;">
+      <h3>Reset Password</h3>
+      <input id="reset-phone" placeholder="Enter your phone number" />
+      <button id="reset-submit">Send Reset Code</button>
+      <p style="text-align: center; margin-top: 15px;">
+        <a href="#" id="back-to-login" style="color: #3498db; text-decoration: none;">Back to Login</a>
+      </p>
+    </div>
+
+    <div id="reset-code-form" style="display:none;">
+      <h3>Enter Reset Code</h3>
+      <input id="reset-code" placeholder="Enter 6-digit code" />
+      <input id="new-password" placeholder="New Password" type="password" />
+      <button id="verify-reset-code">Reset Password</button>
+      <p style="text-align: center; margin-top: 15px;">
+        <a href="#" id="back-to-forgot" style="color: #3498db; text-decoration: none;">Back</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="page-questions" style="display:none;">
+    <h2>Health Assessment</h2>
+    <div id="question-container"></div>
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+      <button id="back">Back</button>
+      <button id="next">Next</button>
+    </div>
+    <div id="progress-dots"></div>
+  </div>
+
+  <div id="page3" style="display:none;">
+    <h2>Your Health Dashboard</h2>
+    <div id="user-info"></div>
+    <div style="text-align: center; margin-top: 30px;">
+      <button id="btn-new-plan">Update Health Plan</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
